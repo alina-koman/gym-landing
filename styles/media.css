@@ -1,0 +1,327 @@
+@media screen and (max-width: 1139px) {
+    .slider-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    .slider-window {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .tickets__grid {
+        display: flex;
+        flex-wrap: nowrap !important;
+        gap: 20px !important;
+        justify-content: flex-start;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .ticket-card {
+        min-width: 320px;
+        max-width: 320px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .slider-arrow {
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s, background-color 0.3s;
+        background-color: #6D6C6C;
+        border-radius: 50%;
+        padding: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .slider-arrow:hover {
+        background-color: #555;
+    }
+
+    .slider-arrow:active {
+        transform: translateY(-50%) scale(0.9);
+    }
+
+    .arrow-prev { left: 0; }
+    .arrow-next { right: 0; }
+}
+
+@media screen and (max-width: 1250px) {
+    .nav__list {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tickets__grid {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .ticket-card {
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: #1E1E1E;
+        padding-top: 100px;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+        z-index: 1001;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .nav__link {
+        font-size: 1.5rem;
+    }
+
+    .hero__title { font-size: 2rem; }
+    .nav__list { gap: 20px; }
+}
+
+@media screen and (max-width: 950px) {
+    .slider-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .slider-window {
+        overflow: hidden;
+    }
+
+    .tickets__grid {
+        flex-wrap: nowrap;
+        gap: 0;
+        justify-content: flex-start;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .ticket-card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .slider-arrow {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s;
+    }
+
+    .slider-arrow:active {
+        transform: translateY(-50%) scale(0.9);
+    }
+
+    .arrow-prev {
+        left: -60px;
+    }
+
+    .arrow-next {
+        right: -60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .coach-item {
+        gap: 30px;
+    }
+
+    .coach-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .video-section__content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .video-wrapper, .video-info {
+        width: 100%;
+        flex: auto;
+    }
+
+    .video-info h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__inner {gap: 15px; }
+    .nav__list { flex-wrap: wrap; justify-content: center; }
+    .hero__content { padding: 30px 20px; }
+    .hero__title { font-size: 1.5rem; }
+    .hero__btn { font-size: 1.2rem; padding: 12px 30px; }
+
+    .discount-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tickets__grid {
+        gap: 20px;
+    }
+
+    .coaches__list {
+        gap: 50px;
+    }
+
+    .coach-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .coach-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        border-radius: 15px;
+    }
+
+    .coach-info {
+        width: 100%;
+        padding: 0;
+    }
+
+    .coach-name {
+        margin-bottom: 15px;
+        font-size: 1.25rem;
+    }
+
+    .about {
+        padding: 50px 0;
+    }
+
+    .about__label {
+        font-size: 1.25rem;
+    }
+
+    .about__title {
+        font-size: 1.5rem;
+    }
+
+    .about__text {
+        font-size: 1rem;
+    }
+
+    .about__image-wrapper {
+        border-radius: 5px;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .footer__col {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .arrow-prev {
+        left: -15px;
+        background: rgba(255,255,255,0.8);
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    .arrow-next {
+        right: -15px;
+        background: rgba(255,255,255,0.8);
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    .slider-container {
+        padding: 0;
+    }
+
+    .arrow-prev {
+        left: 10px;
+        background-color: rgba(109, 108, 108, 0.9);
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+    .arrow-next {
+        right: 10px;
+        background-color: rgba(109, 108, 108, 0.9);
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .signup-section {
+        padding: 50px 0;
+    }
+
+    .signup-title {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .signup-card {
+        padding: 40px 20px;
+    }
+
+    .signup-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero__title { font-size: 0.9rem; }
+    .hero__btn { font-size: 0.9rem; }
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymVis+ | Твій прогрес</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+        <a href="#home" class="logo">GymVis+</a>
+
+        <nav class="nav" id="navMenu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Головна</a></li>
+                <li class="nav__item"><a href="#tickets" class="nav__link">Абонементи</a></li>
+                <li class="nav__item"><a href="#coaches" class="nav__link">Тренери</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Про нас</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <button class="burger" id="burgerBtn">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </button>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero" id="home">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Твій прогрес починається тут</h1>
+            </div>
+            <a href="#tickets" class="hero__btn">Придбати абонемент</a>
+        </div>
+    </section>
+
+    <section class="tickets" id="tickets">
+        <div class="tickets__header-bar">
+            <div class="container">
+                <h2 class="tickets__title">Абонементи</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="discount-info">
+                <img src="./images/gjft.svg" alt="Gift icon" class="discount-icon">
+                <div class="discount-text">
+                    <p>ВІЙСЬКОВИМ: ЗНИЖКА 30% НА ВСІ АБОНЕМЕНТИ</p>
+                    <p>СТУДЕНТАМ: ЗНИЖКА 15% НА ВСІ АБОНЕМЕНТИ</p>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <img src="images/arrow-left.svg" alt="Arrow left" class="slider-arrow arrow-prev" id="prevBtn">
+
+                <div class="slider-window">
+                    <div class="tickets__grid" id="sliderTrack">
+
+                        <div class="ticket-card">
+                            <div class="ticket-card__header">
+                                <h3>ПОВНИЙ</h3>
+                                <span>08:00-22:00</span>
+                            </div>
+                            <div class="ticket-card__body">
+                                <ul class="ticket-price-list">
+                                    <li>1 міс – 3000 грн</li>
+                                    <li>3 міс – 8150 грн</li>
+                                    <li>5 міс – 12000 грн</li>
+                                    <li>10міс – 22500 грн</li>
+                                </ul>
+                                <button class="ticket-btn">Придбати</button>
+                            </div>
+                            <div class="ticket-card__footer">Допомога менеджера</div>
+                        </div>
+
+                        <div class="ticket-card">
+                            <div class="ticket-card__header">
+                                <h3>РАНКОВИЙ</h3>
+                                <span>08:00-14:00</span>
+                            </div>
+                            <div class="ticket-card__body">
+                                <ul class="ticket-price-list">
+                                    <li>1 міс – 1200 грн</li>
+                                    <li>3 міс – 3550 грн</li>
+                                    <li>5 міс – 5950 грн</li>
+                                    <li>10міс – 11850 грн</li>
+                                </ul>
+                                <button class="ticket-btn">Придбати</button>
+                            </div>
+                            <div class="ticket-card__footer">Допомога менеджера</div>
+                        </div>
+
+                        <div class="ticket-card">
+                            <div class="ticket-card__header">
+                                <h3>ОБІДНІЙ</h3>
+                                <span>12:00-17:00</span>
+                            </div>
+                            <div class="ticket-card__body">
+                                <ul class="ticket-price-list">
+                                    <li>1 міс – 1600 грн</li>
+                                    <li>3 міс – 3750 грн</li>
+                                    <li>5 міс – 5250 грн</li>
+                                    <li>10міс – 8500 грн</li>
+                                </ul>
+                                <button class="ticket-btn">Придбати</button>
+                            </div>
+                            <div class="ticket-card__footer">Допомога менеджера</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <img src="images/arrow-right.svg" alt="Arrow right" class="slider-arrow arrow-next" id="nextBtn">
+            </div>
+        </div>
+    </section>
+
+    <section class="coaches" id="coaches">
+        <div class="container">
+            <h2 class="coaches__title">НАШІ ТРЕНЕРИ</h2>
+
+            <div class="coaches__list">
+                <div class="coach-item">
+                    <img src="./images/coach1.svg" alt="Ірина" class="coach-img">
+                    <div class="coach-info">
+                        <h3 class="coach-name">Ірина</h3>
+                        <p class="coach-desc">"Йога з'явилася в моєму житті тоді, коли я шукала спокій і відновлення. Вона навчила мене бачити красу у тиші, у диханні, у повільному русі.</p>
+                        <p class="coach-desc">Зараз я допомагаю людям відчути цю гармонію на практиці. Моє завдання - створити простір, де можна зупинитись, почути своє тіло й відновити внутрішній баланс."</p>
+                        <p class="coach-quote">Цитата: «Слухай своє тіло - воно завжди знає відповідь.»</p>
+                    </div>
+                </div>
+
+                <div class="coach-item">
+                    <img src="./images/coach2.svg" alt="Андрій" class="coach-img">
+                    <div class="coach-info">
+                        <h3 class="coach-name">Андрій</h3>
+                        <p class="coach-desc">"Моє життя завжди крутилось навколо руху й розвитку. Спорт для мене - це шлях самодисципліни й гармонії з тілом. Спочатку я займався легкою атлетикою, а згодом знайшов себе у функціональному фітнесі.</p>
+                        <p class="coach-desc">Сьогодні я допомагаю людям поєднати силу, витривалість і свідомість у кожному тренуванні. Мені важливо, щоб кожен відчув задоволення від руху, а не просто втому після занять."</p>
+                        <p class="coach-quote">Цитата: «Справжня сила - у сталій мотивації, а не в коротких спалахах натхнення.»</p>
+                    </div>
+                </div>
+
+                <div class="coach-item">
+                    <img src="./images/coach3.svg" alt="Софія" class="coach-img">
+                    <div class="coach-info">
+                        <h3 class="coach-name">Софія</h3>
+                        <p class="coach-desc">"З дитинства я шукала спосіб поєднати красу руху й турботу про себе. Танці привели мене у світ фітнесу, де я зрозуміла: найважливіше - слухати своє тіло, а не порівнювати його з чужим.</p>
+                        <p class="coach-desc">Я створюю тренування для жінок, які хочуть відчути легкість, впевненість і силу без тиску. Для мене спорт - це спосіб любити себе, а не боротися з собою."</p>
+                        <p class="coach-quote">Цитата: «Твоя сила - у ніжності до себе.»</p>
+                    </div>
+                </div>
+
+                <div class="coach-item">
+                    <img src="./images/coach4.svg" alt="Дмитро" class="coach-img">
+                    <div class="coach-info">
+                        <h3 class="coach-name">Дмитро</h3>
+                        <p class="coach-desc">"З юності я у спорті: спочатку бокс, потім функціональні тренування. Мене завжди захоплювало, як людина може змінювати себе через рух і волю.</p>
+                        <p class="coach-desc">Тренерство стало для мене способом надихати. Я вчу не тільки працювати фізично, а й не здаватися психологічно. Кожне тренування - це крок до впевненості й стійкості."</p>
+                        <p class="coach-quote">Цитата: «Перемога починається з того моменту, коли ти не здаєшся.»</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__header-block">
+                <h2 class="about__label">ПРО НАС</h2>
+                <div class="about__line"></div>
+            </div>
+
+            <div class="about__content">
+                <h3 class="about__title">GymVis+</h3>
+                <p class="about__text">
+                    Історія GymVis+ починається з невеликої мрії об’єднати людей навколо спорту та здорового способу життя.
+                    Ми прагнемо створити місце, де кожен відчує підтримку та мотивацію на своєму шляху до кращої версії себе.
+                    Наша місія — розвивати фізичну культуру та пропагувати активний спосіб життя через якісні тренування та
+                    індивідуальний підхід. Приєднуйтесь до нашої спільноти та відкрийте для себе нові можливості!
+                </p>
+            </div>
+
+            <div class="about__image-wrapper">
+                <img src="./images/about.svg" alt="Тренування" class="about__img">
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="container">
+            <div class="video-section__header">
+                <h2 class="video-section__title">ОДНЕ З НАШИХ ТРЕНУВАНЬ</h2>
+                <div class="video-section__line"></div>
+            </div>
+
+            <div class="video-section__content">
+                <div class="video-wrapper">
+                    <video class="video-player" controls poster="./images/fon.svg">
+                        <source src="./images/video.mp4" type="video/mp4">
+                        Ваш браузер не підтримує відео тег.
+                    </video>
+                </div>
+
+                <div class="video-info">
+                    <h3>Функціональний крос-тренінг</h3>
+                    <p>Погляньте, як проходять наші групові заняття! Це вибухова суміш кардіо, силових навантажень та вправ на витривалість.</p>
+                    <p>На відео — фрагмент тренування, спрямованого на розвиток координації та спалювання жиру. Наші тренери завжди слідкують за технікою виконання, щоб ви отримували максимум результату без травм.</p>
+                    <ul class="video-features">
+                        <li>Спалювання до 800 ккал за годину</li>
+                        <li>Робота всіх груп м'язів</li>
+                        <li>Підходить для будь-якого рівня підготовки</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="signup-section">
+        <div class="container">
+            <h2 class="signup-title">Записатися на тренування</h2>
+
+            <div class="signup-card">
+                <form class="signup-form">
+                    <input type="text" placeholder="Ім'я та прізвище:" class="signup-input" required>
+                    <input type="tel" placeholder="Номер телефону:" class="signup-input" required>
+                    <input type="email" placeholder="Електронна пошта:" class="signup-input">
+                    <input type="text" placeholder="Місто:" class="signup-input">
+                    <button type="submit" class="signup-btn">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="contacts">
+    <div class="container footer__inner">
+
+        <div class="footer__col">
+            <a href="#home" class="footer__logo">GymVis+</a>
+            <p class="footer__desc">Сила. Баланс. Мотивація.</p>
+            <p class="footer__address">м. Львів, вул. Лукаша 5</p>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Контакти</h4>
+            <ul class="footer__list">
+                <li><a href="tel:+380683697878" class="footer__link">+38 (068) 369-78-78</a></li>
+                <li><a href="mailto:gymvis@gmail.com" class="footer__link">gymvis@gmail.com</a></li>
+                <li><a href="#" class="footer__link">Instagram</a></li>
+                <li><a href="#" class="footer__link">Facebook</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Інформація</h4>
+            <ul class="footer__list">
+                <li><a href="#about" class="footer__link">Про нас</a></li>
+                <li><a href="#tickets" class="footer__link">Абонементи</a></li>
+                <li><a href="#tickets" class="footer__link">Оплата</a></li>
+                <li><a href="#" class="footer__link">Політика конфіденційності</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>
